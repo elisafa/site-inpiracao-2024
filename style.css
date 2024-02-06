@@ -219,3 +219,42 @@
   position: absolute;
   right: 120%;
 }
+
+/* SEÇÃO JUNTE-SE A NÓS */
+.info-content .p-junte {
+  width: 340px;
+  margin-bottom: 0;
+}
+
+.btn-junte a {
+  margin-top: 38px;
+  display: inline-block;
+  background: linear-gradient(25deg, #ffa300 0%, #ed2737 40%, #ed2737 100%);
+  text-decoration: none;
+  border: none;
+  border-radius: 12px;
+  padding: 22px 10px;
+  color: white;
+  font-family: "Roboto";
+  cursor: pointer;
+  width: 240px;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+.info-video {
+  position: absolute;
+  top: -20px;
+  right: 80px;
+}
+
+/* SEÇÃO PRELETORES */
+.preletores {
+  margin-top: 200px;
+  height: 878px;
+  background-color: #001923;
+}
