@@ -426,3 +426,42 @@
 .cards-altura {
   height: 466px;
 }
+
+/* LOCALIZAÇÃO */
+.localizacao {
+  width: 100%;
+  background-color: #89b5c71a;
+  margin-bottom: 100px;
+}
+.localizacao-content {
+  width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 82px;
+  padding: 110px;
+}
+.local-info h2 {
+  width: 416px;
+  font-family: "Montserrat";
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.local-info p {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: -0.01em;
+  text-align: left;
+}
+.map iframe {
+  width: 590px;
+  height: 227px;
+}
+
+/* Precos */
