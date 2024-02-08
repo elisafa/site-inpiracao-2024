@@ -13,6 +13,10 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Inpiração | 2024</title>
   </head>
@@ -159,18 +163,93 @@
               <source src="./assets/video/segundolote.mp4" type="video/mp4" />
               Seu navegador não suporta o elemento de vídeo.
             </video>
-            <!--             
-            <figure>
-              <img src="./assets/images/infoadoracao.png" alt="adoracao" />
-            </figure> -->
           </div>
         </div>
         <span class="back"></span>
       </section>
       <section class="preletores">
-        <h2>Conheça nossos palestrantes</h2>
-        <div></div>
+        <div #swiperRef="" class="swiper mySwiper">
+          <h2 class="pre-h2">Conheça os nossos palestrantes</h2>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./assets/fotos/margarida2.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/fotos/abdalla.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/fotos/targino.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/fotos/micaias.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/fotos/abdalla.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/fotos/targino.png" alt="" />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </section>
+      <section class="horario">
+        <div class="horario-limite">
+          <div class="horario-titulo">
+            <h1>Confira os horários da programação</h1>
+            <p class="tags">
+              <a href="https://www.instagram.com/ibcidade/" target="_blank"
+                ><img
+                  src="./assets/icons/iconeinstagram.svg"
+                  alt="instagram"
+                  width="40px"
+                  height="40px"
+              /></a>
+              21 a 23 de março, 2024
+            </p>
+          </div>
+          <div class="horarios-content">
+            <p>
+              A Igreja Batista Cidade Jardim estreia na organização da Conferência
+              Inspiração, com a missão de criar um ambiente que gere conexões de valor
+              para toda a vida. Inspirando e capacitando líderes para impactar e
+              transformar a cidade!
+            </p>
+            <div class="btn-junte">
+              <a href="#">Garantir meu ingresso</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cards-horario">
+        <div class="cards-limite">
+          <div class="card-horario-quinta">
+            <div class="dias">
+              <p>PRIMEIRO DIA</p>
+              <p>Quinta, 21/03</p>
+            </div>
+            <div class="programa">
+              <div class="horas">
+                <span>18:00 - 19:00</span>
+                <p>Abertura e Check-in na recepção.</p>
+              </div>
+              <div class="horas">
+                <span>19:00</span>
+                <p>Início da Palestra do primeiro dia da Conferência.</p>
+              </div>
+              <div class="horas">
+                <span>22:00</span>
+                <p>Encerramento do primeiro dia.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-horario-sexta"></div>
+          <div class="card-horario-sabado"></div>
+        </div>
       </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
