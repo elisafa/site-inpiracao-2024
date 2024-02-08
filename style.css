@@ -313,6 +313,8 @@
 }
 /* HORARIO */
 .horario {
+  margin-top: 60px;
+  margin-bottom: 100px;
   display: flex;
 }
 .horario-limite {
@@ -349,11 +351,78 @@
 .cards-limite {
   width: 1240px;
   height: 307px;
-  margin: 60px auto;
+  margin: 0 auto 60px auto;
+  border-radius: 25px;
   padding: 80px 50px 80px 80px;
-  background-color: #0039e6;
+  background: linear-gradient(45deg, #00c6b2 5%, #0039e6 70%, darkblue 100%);
 }
-.card-horario-quinta {
+.card {
   display: flex;
-  gap: 15 0px;
+  gap: 150px;
+  margin-bottom: 120px;
+}
+.programa {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.horas {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.horas span {
+  width: 115px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  text-align: center;
+  color: #fff;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+}
+.horas p {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fdfdfd;
+}
+
+.dias span {
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.dias p {
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #fdfdfd;
+}
+
+.cards-limite-sexta {
+  width: 1240px;
+  height: 307px;
+  margin: 0 auto 60px auto;
+  border-radius: 25px;
+  padding: 80px 50px 80px 80px;
+  background: #001923;
+}
+.dias .dias-segundo {
+  color: #fff;
+}
+.cards-altura {
+  height: 466px;
 }
