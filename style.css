@@ -9,10 +9,10 @@
 /* max-width: 100%; */
 /* margin: 0 auto; */
 /* } */
-.limite {
+/* .limite {
   width: 100%;
   margin: 0 auto;
-}
+} */
 .banner-principal .banner-bg {
   background: linear-gradient(45deg, #00c6b2 5%, #0039e6 70%, darkblue 100%);
   width: 100%;
@@ -78,6 +78,23 @@
   position: absolute;
   top: 0;
   right: 150px;
+}
+
+@media (max-width: 480px) {
+  .img-inspiracao {
+    width: 310px;
+  }
+  .tema img {
+    width: 260px;
+  }
+  .banner-principal .banner-bg {
+    border-radius: 0 0 40px 40px;
+    height: 655px;
+  }
+  .btn-inscricao a {
+    width: 240px;
+    padding: 22px 15px;
+  }
 }
 
 /* ///////////////// */
