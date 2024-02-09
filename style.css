@@ -5,14 +5,13 @@
 }
 
 /* SEÇAO HERO - BANNER PRINCIPAL */
-.container {
-  max-width: 100%;
-  margin: 0 auto;
-}
+/* .container { */
+/* max-width: 100%; */
+/* margin: 0 auto; */
+/* } */
 .limite {
-  width: 1440px;
+  width: 100%;
   margin: 0 auto;
-  /* background-color: red; */
 }
 .banner-principal .banner-bg {
   background: linear-gradient(45deg, #00c6b2 5%, #0039e6 70%, darkblue 100%);
@@ -82,7 +81,7 @@
 }
 
 /* ///////////////// */
-/* SEÇÃO INFORMAÇÕES */
+/* SEÇÃO INFORMAÇÕES ====================================================*/
 .info {
   margin-top: 120px;
   margin-bottom: 120px;
@@ -157,7 +156,7 @@
   z-index: -1;
 }
 
-/* SEÇÃO EVENTO */
+/* SEÇÃO EVENTO ================================================================*/
 .evento {
   background-color: #f2f6f8;
   margin-bottom: 120px;
@@ -224,7 +223,7 @@
   right: 120%;
 }
 
-/* SEÇÃO JUNTE-SE A NÓS */
+/* SEÇÃO JUNTE-SE A NÓS =============================================================*/
 .info-content .p-junte {
   width: 340px;
   margin-bottom: 0;
@@ -256,7 +255,7 @@
   right: 80px;
 }
 
-/* SEÇÃO PRELETORES */
+/* SEÇÃO PRELETORES =============================================================== */
 .preletores {
   margin-top: 200px;
   height: 878px;
@@ -311,7 +310,7 @@
   background-color: #ccc;
   --swiper-navigation-color: #000;
 }
-/* HORARIO */
+/* HORARIO =============================================================*/
 .horario {
   margin-top: 60px;
   margin-bottom: 100px;
@@ -347,7 +346,7 @@
   justify-content: flex-end;
 }
 
-/* CARDS HORARIOS */
+/* CARDS HORARIOS ==================================================================== */
 .cards-limite {
   width: 1240px;
   height: 307px;
@@ -427,11 +426,10 @@
   height: 466px;
 }
 
-/* LOCALIZAÇÃO */
+/* LOCALIZAÇÃO ==============================================================*/
 .localizacao {
   width: 100%;
   background-color: #89b5c71a;
-  margin-bottom: 100px;
 }
 .localizacao-content {
   width: 1240px;
@@ -464,4 +462,152 @@
   height: 227px;
 }
 
-/* Precos */
+/* Precos =======================================================================*/
+.preco-limite {
+  width: 1230px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+.precos {
+  background-color: #001923;
+  padding: 120px 112px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preco-info h2 {
+  font-family: "Montserrat";
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 50px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #fdfdfd;
+}
+.preco-info p {
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fdfdfd;
+  margin-bottom: 56px;
+}
+
+.preco-cards {
+  display: grid;
+  grid-template-columns: 356px 356px 356px;
+  gap: 82px;
+}
+.card-preco {
+  width: 350px;
+  height: 488px;
+  padding: 30px;
+  background-color: #fdfdfd;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.card-preco::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 40px;
+  width: 324px;
+  height: 504px;
+  border-radius: 10px;
+  background-image: linear-gradient(45deg, #00c6b2 5%, #0039e6 70%, darkblue 100%);
+  z-index: -1;
+}
+
+.card-preco h3 {
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  color: #3d4c5e;
+  position: relative;
+}
+.card-preco h3::before {
+  content: url("./assets/icons/line.png");
+  position: absolute;
+  top: 5px;
+  left: -10px;
+}
+
+.card-preco h4 span {
+  font-family: "Roboto";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #00131a;
+}
+
+.card-preco h4::after {
+  content: url("./assets/icons/retangulo.png");
+  position: relative;
+  top: 8px;
+}
+.card-preco p {
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #3d4c5e;
+  margin-top: 8px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+
+.card-preco p:not(.alert)::before {
+  content: url("./assets/icons/confirmapreco.png");
+  position: relative;
+  top: 8px;
+  left: -10px;
+}
+
+.alerta {
+  margin-top: 8px;
+  margin-bottom: 36px;
+  display: flex;
+  align-items: center;
+}
+.m-alerta {
+  margin-bottom: 92px;
+}
+
+.btn-preco a {
+  margin-top: 16px;
+  display: inline-block;
+  background: linear-gradient(25deg, #ffa300 0%, #ed2737 40%, #ed2737 100%);
+  text-decoration: none;
+  border: none;
+  border-radius: 12px;
+  padding: 22px 10px;
+  color: white;
+  font-family: "Roboto";
+  cursor: pointer;
+  width: 276px;
+  text-align: center;
+}
+
+.info-content .p-junte {
+  width: 340px;
+  margin-bottom: 0;
+}
