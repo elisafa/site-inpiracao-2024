@@ -202,6 +202,7 @@
 @media (max-width: 480px) {
   .info {
     margin-top: 10px;
+    margin-bottom: 0px;
   }
   .info-limite {
     width: 100%;
@@ -235,7 +236,7 @@
     width: 303px;
     height: 234px;
     top: 600px;
-    right: 10px;
+    right: 15px;
     border-radius: 5px;
   }
 }
@@ -246,7 +247,7 @@
   margin-bottom: 120px;
 }
 .evento-limite {
-  width: 1440px;
+  /* width: 1440px; */
   height: 565px;
   margin: 0 auto;
   padding: 60px 112px 0 112px;
@@ -305,6 +306,36 @@
   content: url("./assets/icons/iconeseta.svg");
   position: absolute;
   right: 120%;
+}
+
+@media (max-width: 480px) {
+  .evento {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .evento-limite {
+    padding: 32px;
+  }
+  .evento-limite h2 {
+    font-size: 32px;
+  }
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 5px;
+    margin-left: 0;
+    padding: 0;
+    /* justify-content: center; */
+  }
+  .card1,
+  .card2,
+  .card3 {
+    align-items: center;
+  }
+  .card1 p,
+  .card2 p,
+  .card3 p {
+    text-align: center;
+  }
 }
 
 /* SEÇÃO JUNTE-SE A NÓS =============================================================*/
@@ -393,6 +424,12 @@
 .swiper-button-prev:hover {
   background-color: #ccc;
   --swiper-navigation-color: #000;
+}
+
+@media (max-width: 480px) {
+  .junte-info {
+    margin-top: 600px;
+  }
 }
 /* HORARIO =============================================================*/
 .horario {
