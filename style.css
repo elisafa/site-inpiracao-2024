@@ -30,7 +30,6 @@
 
 .img-ibcidade {
   width: 226.01px;
-  height: 50px;
 }
 
 .banner-logo {
@@ -81,8 +80,12 @@
 }
 
 @media (max-width: 480px) {
+  .tema {
+    margin-top: 0px;
+  }
   .img-inspiracao {
     width: 310px;
+    /* margin-bottom: 30px; */
   }
   .tema img {
     width: 260px;
@@ -94,6 +97,30 @@
   .btn-inscricao a {
     width: 240px;
     padding: 22px 15px;
+  }
+  .banner-info {
+    flex-direction: column;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    margin-left: 32px;
+  }
+  .img-ibcidade {
+    width: 127px;
+  }
+  .img-data {
+    width: 88px;
+  }
+  .circulo1 img,
+  .circulo2 img {
+    width: 150px;
+  }
+  .circulo2 {
+    top: 0px;
+    right: 20px;
+  }
+  .circulo1 {
+    top: 430px;
+    left: -15px;
   }
 }
 
@@ -171,6 +198,46 @@
   height: 421px;
   border-radius: 30px 0 0 0;
   z-index: -1;
+}
+@media (max-width: 480px) {
+  .info {
+    margin-top: 10px;
+  }
+  .info-limite {
+    width: 100%;
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 32px;
+  }
+
+  .info-content h2 {
+    /* width: 327px; */
+    font-size: 32px;
+  }
+  .info-content p {
+    font-size: 20px;
+  }
+  .info-img {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .info-img img {
+    width: 303px;
+  }
+
+  .info-content .tags {
+    margin-left: 32px;
+  }
+
+  .info .back {
+    position: absolute;
+    width: 303px;
+    height: 234px;
+    top: 600px;
+    right: 10px;
+    border-radius: 5px;
+  }
 }
 
 /* SEÇÃO EVENTO ================================================================*/
