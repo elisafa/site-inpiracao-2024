@@ -908,7 +908,7 @@
 @media (max-width: 480px) {
   .precos {
     width: 100%;
-    padding: 32px;
+    padding: 32px 32px 32px 20px;
   }
   .preco-limite {
     width: 100%;
@@ -925,6 +925,11 @@
   }
   .preco-info p {
     font-size: 20px;
+  }
+  .cp1,
+  .cp2,
+  .cp3 {
+    margin-bottom: 40px;
   }
 }
 
@@ -988,5 +993,69 @@
       "passos-cards-2"
       "passos-cards-3";
     padding: 32px;
+    text-align: center;
+  }
+  .top {
+    font-size: 32px;
+  }
+  .passos-cards-1 p,
+  .passos-cards-2 p,
+  .passos-cards-3 p {
+    text-align: center;
+  }
+  .passos-cards-1 h3,
+  .passos-cards-2 h3,
+  .passos-cards-3 h3 {
+    text-align: center;
+  }
+}
+
+/* FOLDER */
+.folder {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1160px;
+  background-color: #001923;
+  margin: 0 auto 60px auto;
+  padding: 16px 32px;
+  border-radius: 10px;
+}
+.btn-preco.btn-titulo-margin a {
+  margin-top: 0;
+}
+.folder-titulo h2 {
+  font-family: "Montserrat";
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 39px;
+  letter-spacing: 0em;
+  color: #fdfdfd;
+  margin-bottom: 10px;
+}
+.folder-titulo p {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  color: #fdfdfdcc;
+}
+
+@media (max-width: 480px) {
+  .folder {
+    width: 327px;
+    height: 292px;
+    padding: 42px;
+    flex-direction: column;
+    row-gap: 30px;
+    margin-top: 40px;
+  }
+  .folder-titulo h2 {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .folder-titulo p {
+    text-align: center;
   }
 }
