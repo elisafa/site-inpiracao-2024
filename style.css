@@ -247,7 +247,7 @@
   margin-bottom: 120px;
 }
 .evento-limite {
-  /* width: 1440px; */
+  width: 1440px;
   height: 565px;
   margin: 0 auto;
   padding: 60px 112px 0 112px;
@@ -319,6 +319,7 @@
     margin-bottom: 0px;
   }
   .evento-limite {
+    width: 100%;
     padding: 32px;
   }
   .evento-limite h2 {
@@ -748,7 +749,7 @@
 }
 /* Precos =======================================================================*/
 .preco-limite {
-  width: 1440px;
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin: 0 auto;
@@ -907,6 +908,7 @@
 @media (max-width: 480px) {
   .precos {
     width: 100%;
+    padding: 32px;
   }
   .preco-limite {
     width: 100%;
@@ -915,7 +917,14 @@
       "preco-info"
       "cp1" "cp2" "cp3";
     row-gap: 10px;
-    column-gap: 32px;
+    column-gap: 32px 32px 32px 10px;
+  }
+  .preco-info h2 {
+    width: 327px;
+    font-size: 32px;
+  }
+  .preco-info p {
+    font-size: 20px;
   }
 }
 
