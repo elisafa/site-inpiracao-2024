@@ -309,9 +309,13 @@
 }
 
 @media (max-width: 480px) {
+  .card2::before,
+  .card3::before {
+    content: "";
+  }
   .evento {
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
   }
   .evento-limite {
     padding: 32px;
@@ -343,6 +347,17 @@
   width: 340px;
   margin-bottom: 0;
 }
+.info-limite-media {
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "info-area1" "info-area2";
+}
+
+.info-area1 {
+  grid-area: info-area1;
+}
+.info-area2 {
+  grid-area: info-area2;
+}
 
 .btn-junte a {
   margin-top: 38px;
@@ -368,6 +383,41 @@
   position: absolute;
   top: -20px;
   right: 80px;
+}
+@media (max-width: 480px) {
+  .info-limite-media {
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "info-area1" "info-area2";
+  }
+  .info-area1 {
+    grid-area: info-area1;
+  }
+  .info-area2 {
+    grid-area: info-area2;
+    position: relative;
+  }
+  .info-area2 {
+    width: 303px;
+    height: 224px;
+  }
+  .info-area2 video {
+    /* display: none; */
+    position: absolute;
+    left: 100px;
+    bottom: 0px;
+    width: 303px;
+    height: 224px;
+  }
+  .junte-info .j-media-back {
+    position: absolute;
+    left: 60px;
+    top: 420px;
+    width: 310px;
+    height: 200px;
+  }
+  .info.junte-info {
+    margin-top: 20px;
+  }
 }
 
 /* SEÇÃO PRELETORES =============================================================== */
@@ -585,18 +635,31 @@
 
 /* Precos =======================================================================*/
 .preco-limite {
-  width: 1230px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  z-index: 1;
+  width: 1440px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
+  grid-template-areas:
+    "preco-info preco-info preco-info"
+    "cp1 cp2 cp3";
+  row-gap: 10px;
+  column-gap: 32px;
+}
+.preco-info {
+  grid-area: preco-info;
+}
+.cp1 {
+  grid-area: cp1;
+}
+.cp2 {
+  grid-area: cp2;
+}
+.cp3 {
+  grid-area: cp3;
 }
 .precos {
   background-color: #001923;
-  padding: 120px 112px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 112px;
 }
 
 .preco-info h2 {
@@ -620,11 +683,6 @@
   margin-bottom: 56px;
 }
 
-.preco-cards {
-  display: grid;
-  grid-template-columns: 356px 356px 356px;
-  gap: 82px;
-}
 .card-preco {
   width: 350px;
   height: 488px;
@@ -635,18 +693,19 @@
   gap: 10px;
   border-radius: 10px;
   position: relative;
+  z-index: 1;
 }
 
 .card-preco::before {
   content: "";
   position: absolute;
   top: 0;
-  left: 40px;
-  width: 324px;
-  height: 504px;
-  border-radius: 10px;
+  left: 330px;
+  width: 20px;
+  height: 489px;
+  border-radius: 0px 10px 10px 0px;
   background-image: linear-gradient(45deg, #00c6b2 5%, #0039e6 70%, darkblue 100%);
-  z-index: -1;
+  z-index: 0;
 }
 
 .card-preco h3 {
@@ -731,4 +790,81 @@
 .info-content .p-junte {
   width: 340px;
   margin-bottom: 0;
+}
+@media (max-width: 480px) {
+  .precos {
+    width: 100%;
+  }
+  .preco-limite {
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "preco-info"
+      "cp1" "cp2" "cp3";
+    row-gap: 10px;
+    column-gap: 32px;
+  }
+}
+
+/* CONHEÇA OS PASSOS PARA SE INSCREVER */
+.passos {
+  max-width: 1440px;
+  padding: 100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "top top top"
+    "passos-cards-1 passos-cards-2 passos-cards-3";
+  row-gap: 104px;
+  column-gap: 32px;
+}
+.top {
+  grid-area: top;
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 50px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #00131a;
+}
+
+.passos-cards-1 h3,
+.passos-cards-2 h3,
+.passos-cards-3 h3 {
+  margin-top: 16px;
+  margin-bottom: 4px;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #00131a;
+}
+
+.passos-cards-1 p,
+.passos-cards-2 p,
+.passos-cards-3 p {
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #00131a99;
+}
+
+@media (max-width: 480px) {
+  .passos {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "top"
+      "passos-cards-1"
+      "passos-cards-2"
+      "passos-cards-3";
+    padding: 32px;
+  }
 }
