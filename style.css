@@ -401,7 +401,6 @@
     height: 224px;
   }
   .info-area2 video {
-    /* display: none; */
     position: absolute;
     left: 100px;
     bottom: 0px;
@@ -416,7 +415,7 @@
     height: 200px;
   }
   .info.junte-info {
-    margin-top: 20px;
+    margin-top: 400px;
   }
 }
 
@@ -477,10 +476,39 @@
 }
 
 @media (max-width: 480px) {
-  .junte-info {
-    margin-top: 600px;
+  .preletores {
+    width: 100%;
+    margin-top: 100px; /* Reduzindo a margem superior para ajustar melhor em dispositivos móveis */
+    height: auto; /* Removendo a altura fixa para que ela possa se ajustar dinamicamente ao conteúdo */
+    padding: 20px; /* Adicionando um espaçamento interno para melhorar a aparência em dispositivos móveis */
+  }
+  .pre-h2 {
+    font-size: 32px;
+  }
+  .swiper {
+    width: 100%; /* Definindo a largura como 100% para ocupar toda a largura do contêiner pai */
+  }
+
+  .swiper-slide {
+    width: auto !important; /* Definindo a largura automática para as slides */
+    margin: 0 auto; /* Centralizando as slides horizontalmente */
+    text-align: center; /* Alinhando o conteúdo ao centro */
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none; /* Escondendo os botões de navegação nos dispositivos móveis */
   }
 }
+
+/* @media (max-width: 480px) {
+  .junte-info {
+    margin-top: 600px;
+  } */
+
+/* .preletores {
+    flex-direction: column;
+  } */
 /* HORARIO =============================================================*/
 .horario {
   margin-top: 60px;
