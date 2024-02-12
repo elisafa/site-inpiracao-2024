@@ -489,11 +489,14 @@
   .pre-h2 {
     font-size: 32px;
     text-align: center;
+    width: 327px;
   }
   .swiper {
     width: 100%; /* Definindo a largura como 100% para ocupar toda a largura do contêiner pai */
   }
-
+  .swiper-wrapper {
+    width: 327px;
+  }
   .swiper-slide {
     width: auto !important; /* Definindo a largura automática para as slides */
     margin: 0 auto; /* Centralizando as slides horizontalmente */
@@ -935,16 +938,16 @@
 
 /* CONHEÇA OS PASSOS PARA SE INSCREVER */
 .passos {
-  max-width: 1440px;
+  width: 100%;
   padding: 100px;
-  margin: 0 auto;
+  margin: 60px auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
     "top top top"
     "passos-cards-1 passos-cards-2 passos-cards-3";
   row-gap: 104px;
-  column-gap: 32px;
+  column-gap: 90px;
 }
 .top {
   grid-area: top;
@@ -957,6 +960,9 @@
   text-align: center;
   color: #00131a;
 }
+/* .passos-cards-1 {
+  margin-left: 20px;
+} */
 
 .passos-cards-1 h3,
 .passos-cards-2 h3,
@@ -1187,7 +1193,7 @@
   }
 }
 
-/* FOOTER */
+/* FOOTER*/
 .footer {
   display: flex;
   align-items: center;
@@ -1200,7 +1206,28 @@
   width: 1220px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "footer-logo-ibcidade footer-logo-inspiracao footer-redes"
+    "endereco-footer endereco-footer endereco-footer";
   justify-items: center;
+  gap: 40px;
+}
+.footer-logo-ibcidade {
+  grid-area: footer-logo-ibcidade;
+}
+.footer-logo-inspiracao {
+  grid-area: footer-logo-inspiracao;
+}
+.footer-redes {
+  grid-area: footer-redes;
+}
+.endereco-footer {
+  grid-area: endereco-footer;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  color: #fff;
 }
 .tags-footer {
   display: flex;
@@ -1211,4 +1238,23 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 15px;
+}
+
+@media (max-width: 480px) {
+  .footer {
+    width: 375px;
+    height: 500px;
+  }
+  .footer-top {
+    width: 310px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "footer-logo-ibcidade" "footer-logo-inspiracao" "footer-redes"
+      "endereco-footer";
+  }
+  .endereco-footer {
+    font-size: 14px;
+    width: 289px;
+    text-align: center;
+  }
 }
