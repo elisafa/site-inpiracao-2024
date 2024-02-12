@@ -447,7 +447,6 @@
 }
 .swiper {
   width: 1216px;
-  /* background-color: red; */
 }
 
 .swiper-button-next {
@@ -1242,7 +1241,6 @@
 
 @media (max-width: 480px) {
   .footer {
-    /* width: 375px; */
     height: 500px;
   }
   .footer-top {

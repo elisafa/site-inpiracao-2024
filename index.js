@@ -14,9 +14,23 @@ questionsIcone.forEach((questionIcone) => {
   })
 })
 
+// var swiper = new Swiper(".mySwiper", {
+//   slidesPerView: 4,
+//   centeredSlides: false,
+//   spaceBetween: 20,
+//   pagination: {
+//     el: ".swiper-pagination",
+//     type: "fraction",
+//   },
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+// })
+
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 4,
-  centeredSlides: false,
+  slidesPerView: "auto",
+  centeredSlides: true,
   spaceBetween: 20,
   pagination: {
     el: ".swiper-pagination",
@@ -25,5 +39,12 @@ var swiper = new Swiper(".mySwiper", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    // Configuração para telas menores que 480px
+    480: {
+      slidesPerView: 1,
+      centeredSlides: true,
+    },
   },
 })
