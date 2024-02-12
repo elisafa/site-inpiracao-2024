@@ -1170,13 +1170,19 @@
     margin-bottom: 30px;
   }
   .q {
-    font-size: 16px;
+    font-size: 18px;
     width: 100px;
+    color: #00131a;
   }
   .quest-number {
     display: none;
   }
   .quest-icone {
     width: 30px !important;
+  }
+  .res {
+    width: 327px;
+    font-size: 18px;
+    padding: 8px;
   }
 }
