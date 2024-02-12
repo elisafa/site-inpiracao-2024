@@ -1242,7 +1242,7 @@
 
 @media (max-width: 480px) {
   .footer {
-    width: 375px;
+    /* width: 375px; */
     height: 500px;
   }
   .footer-top {
