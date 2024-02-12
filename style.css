@@ -13,6 +13,9 @@
   width: 100%;
   margin: 0 auto;
 } */
+.container {
+  overflow-x: hidden;
+}
 .banner-principal .banner-bg {
   background: linear-gradient(45deg, #00c6b2 5%, #0039e6 70%, darkblue 100%);
   width: 100%;
