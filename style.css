@@ -1059,3 +1059,124 @@
     text-align: center;
   }
 }
+
+/* PERGUNTAS FREQUENTES */
+.perguntas {
+  background-color: #89b5c71a;
+  padding: 120px 112px 120px 112px;
+}
+.perguntas-content {
+  width: 1215px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.question {
+  display: flex;
+  align-items: center;
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 500;
+  text-align: left;
+  /* margin-bottom: 5px; */
+  background-color: #fff;
+  width: 696px;
+  height: 112px;
+  border-radius: 6px;
+  padding: 40px 40px 0 40px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.question p {
+  width: 450px;
+}
+.question .quest-number {
+  width: 27px;
+}
+.question .quest-icone {
+  width: 150px;
+  text-align: end;
+}
+.perguntas-titulo h2 {
+  width: 411px;
+  font-family: "Montserrat";
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 50px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #00131a;
+}
+.perguntas-titulo p {
+  width: 411px;
+  margin-top: 16px;
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #3d4c5e;
+}
+
+.q {
+  text-align: left;
+}
+.res1,
+.res2,
+.res3,
+.res4,
+.res5,
+.res6 {
+  display: none;
+  width: 696px;
+  background-color: #fff;
+  /* margin-left: 84px; */
+  padding: 0 84px 20px 84px;
+  /* margin-top: 0;
+  margin-bottom: 5px; */
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #56546a;
+}
+.show {
+  display: block;
+}
+
+@media (max-width: 480px) {
+  .perguntas {
+    padding: 32px;
+  }
+  .perguntas-content {
+    grid-template-columns: 1fr;
+    width: 327px;
+  }
+  .question {
+    width: 327px;
+    padding: 10px;
+  }
+  .perguntas-titulo h2,
+  .perguntas-titulo p {
+    width: 327px;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .perguntas-titulo p {
+    margin-bottom: 30px;
+  }
+  .q {
+    font-size: 16px;
+    width: 100px;
+  }
+  .quest-number {
+    display: none;
+  }
+  .quest-icone {
+    width: 30px !important;
+  }
+}
