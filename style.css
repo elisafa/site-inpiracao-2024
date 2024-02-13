@@ -451,6 +451,9 @@
 .swiper {
   width: 1216px;
 }
+.swiper-wrapper .swiper-slide {
+  width: 314px !important;
+}
 
 .swiper-button-next {
   --swiper-navigation-color: #ccc;
